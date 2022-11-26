@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+<script>
+function validateform(){  
+var name=document.myform.name.value;  
+var ID=document.myform.ID.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(ID.length<6){  
+  alert("ID must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script> 
+<script>
+function myFunction() {
+  var x = document.getElementById("tech").required;
+  document.getElementById("tech").innerHTML = x;
+}
+</script>
 <body>
 <center>
 <h1>Anokha fest</h1>
@@ -23,14 +43,13 @@ body {
 <center>
 </style>
 </style>
-  </div>
+ 
+<body>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+ID Number: <input type="ID" name="ID"><br/>  
 
-  <div class="container">
-    <label for="uname"><b>Name</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required><br>
 
-    <label for="psw"><b>ID Number</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required><br>
 
     
     <label>
@@ -74,7 +93,7 @@ body {
   <p><label for="w3review">Please let us know your skills and why we should consider you for the fest<label></p>
   <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
   <br>
-  <button type="submit">Submit</button>
+<input type="submit" value="submit"> 
 	
   </div>
 </form>
