@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<script>
+function validateform(){  
+var name=document.myform.name.value;  
+var ID=document.myform.ID.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(ID.length<6){  
+  alert("ID must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script> 
+<script>
+function myFunction() {
+  var x = document.getElementById("tech").required;
+  document.getElementById("tech").innerHTML = x;
+}
+</script>
+
+
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html" target="_self">Home</a>
+  <a href="ui.html" target="_self">Signin</a>
+ 
+  <a href="fest.html">Register</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>2022 Anokha Tech Fest</h2>
+
+</div>
+
+
+
+<center>
+<h1>Anokha fest</h1>
+</center>
+<center>
+<b >welcome to the official page for the Anokha fest 2022. Please enter your details to get a chance to participate in the fest! </b><br><br><br>
+</center>
+<title>anokha fest</title>
+  <link rel="icon" type="image/x-icon" href="img_avatar2.png">
+</body>
+</html>
+
+<style>
+body {
+  background-image: url('1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<center>
+</style>
+</style>
+ 
+<body>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+ID Number: <input type="ID" name="ID"><br/>  
+
+
+
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Day Scholar
+	  
+    </label>
+	<br>
+	 <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  </label>
+
+  <br>
+  <p>Please select your catagory:</p>
+  <input type="radio" id="tech" name="technology" value="HTML">
+  <label for="html">Tech</label><br>
+  <input type="radio" id="culture" name="clutural" value="CSS">
+  <label for="css">Culture</label><br>
+  <input type="radio" id="art" name="art" value="JavaScript">
+  <label for="javascript">art</label>
+  
+ <h3>Please upload your CV:</h3>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  </div>
+
+  <div class="container">
+    <button type="button" class="cancelbtn">Cancel</button><br>
+ 
+	
+	<label for="cars">select the fest date:</label>
+  <select name="day" id="day">
+    <option value="volvo">day1</option>
+    <option value="saab">day2</option>
+    <option value="opel">day3</option>
+    <option value="audi">day4</option>
+  </select>
+  <br><br>
+
+
+  <p><label for="w3review">Please let us know your skills and why we should consider you for the fest<label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+  <br>
+<input type="submit" value="submit"> 
+	
+  </div>
+</form>
+</center><br>
+<center>
+<address>
+Amrita Vishwa Vidyapeetham<br>
+Coimbatore Campus<br>
+Amritanagar<br>
+Coimbatore - 641 112<br>
+Tamilnadu, India<br>
+</address>
+</center>
+</body>
+</html>
